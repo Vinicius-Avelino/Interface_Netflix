@@ -1,3 +1,4 @@
+/*Variaveis em css*/
 :root{
     --vermelho: #E50914;
     --preto: #141414;
@@ -12,6 +13,7 @@
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color:white;
 }
 
 /* display:flex alinha o menu */
@@ -28,12 +30,59 @@ header .logo{
     margin-left: 5px;
 }
 
+/*Altera a cor da fonte dos links*/
 header nav a{
     color:#AAA;
     text-decoration: none;
     margin-right: 10px;
 }
-
+/* Ao passar o mouse em cima do texto, ele fica branco*/
 header nav a:hover{
     color:#fff
+}
+
+/*Jogo principal*/
+ .jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url('../img/capa.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top:15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,50%);
+    border:none;
+    color:white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor:pointer;
+    transition: .3s; /*transição no branco para o preto no botão*/
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
 }
